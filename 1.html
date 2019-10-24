@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    td{
+    height: 60px;
+    width: 100px;
+    }
+    .p{
+    position:absolute;
+    top:3cm;
+    left:17cm;
+    }
+      
+    .scr1{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr1>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+    .scr2{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr2>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+      .scr3{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr3>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+      .scr4{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:5px double black;
+            display: none;
+            background-image: url(背景1.jpg
+              ); 
+            background-size:contain;
+          }        
+      .scr4>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;}
+       
+        .scr5{
+             position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+            background-image: url(背景1.jpg
+              ); 
+            background-size:contain;
+          }        
+      .scr5>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+      .scr6{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr6>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+      .scr7{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr7>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+      .scr8{
+            position: fixed;
+            top:50%;
+            left:45%;
+            background-color: white;
+            padding: 30px;
+            border:10px ridge #0000FF;
+            display: none;
+          }        
+      .scr8>.close{
+        position:absolute;top: 1px;right: 2px;cursor:pointer;
+      }    
+    </style>
+    <script>
+      function showscr1(){
+        scr1.style.display="block"
+      }
+      function closescr1(){
+        scr1.style.display="none"
+      }
+
+      function showscr2(){
+        scr2.style.display="block"
+      }
+      function closescr2(){
+        scr2.style.display="none"
+      }
+function showscr3(){
+        scr3.style.display="block"
+      }
+      function closescr3(){
+        scr3.style.display="none"
+      }
+      function showscr4(){
+        scr4.style.display="block"
+      }
+      function closescr4(){
+        scr4.style.display="none"
+      }
+      function showscr5(){
+        scr5.style.display="block"
+      }
+      function closescr5(){
+        scr5.style.display="none"
+      }
+      function showscr6(){
+        scr6.style.display="block"
+      }
+      function closescr6(){
+        scr6.style.display="none"
+      }function showscr7(){
+        scr7.style.display="block"
+      }
+      function closescr7(){
+        scr7.style.display="none"
+      }
+      function showscr8(){
+        scr8.style.display="block"
+      }
+      function closescr8(){
+        scr8.style.display="none"
+      }
+    </script>
+
+  </head>
+  <body background="bg.jpg" style=" background-repeat:no-repeat ;
+
+background-size:100% 100%; 
+
+background-attachment: fixed;" >
+    <a href="http://www1.cycu.edu.tw/"><img src="標誌.png" height="130" width="446" title="首頁"></a><br>
+
+    <marquee direction="down" height="500" width="35" scrollamount="10" bgcolor=yellow ><b><font color=bule face="微軟正黑體" size=6 >企業最愛私立大學第一名</font></b></marquee>
+    <table  background="圖片1.png" cellpadding="10" border='1' class="p">
+      <tr>
+        <td bgcolor="#FFA488"></td>
+        <td></td>
+        
+        <td bgcolor="#FFA488" align='center' valign="middle">
+        <input type="button" name="免費軟體" value="免費軟體" onclick="showscr4();">
+          <div id="scr4" class="scr4"><div onclick="closescr4();" class="close">X</div> 這是免費軟體</div></td>  
+        <td></td>
+        <td bgcolor=" #FFA488" align='center' valign="middle">
+    
+        <input type="button" name="悠遊卡" value="悠遊卡" onclick="showscr6();">
+          <div id="scr6" class="scr6"><div onclick="closescr6();" class="close">X</div> 這是悠遊卡</div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td  bgcolor=" #FFA488" align='center' valign="middle">
+    
+        <input type="button" name="學生證" value="學生證" onclick="showscr1();">
+          <div id="scr1" class="scr1"><div onclick="closescr1();" class="close">X</div> 這是學生證</div></td>
+        <td rowspan="4" colspan="4"><img src="idcard.jpg" height="308" width="506"></td>
+        <td bgcolor=" #FFA488"></td>
+      </tr>
+      <tr>
+        <td bgcolor=" #FFA488"></td>
+        <td bgcolor=" #FFA488" align='center' valign="middle">
+    
+        <input type="button" name="討論室" value="討論室" onclick="showscr7();">
+          <div id="scr7" class="scr7"><div onclick="closescr7();" class="close">X</div> 這是討論室</div></td>
+      </tr>
+      <tr>
+        <td  bgcolor=" #FFA488" align='center' valign="middle">
+    
+        <input type="button" name="特約商店" value="特約商店" onclick="showscr2();">
+          <div id="scr2" class="scr2"><div onclick="closescr2();" class="close">X</div> 這是特約商店</div></td>
+        <td bgcolor=" #FFA488"></td>
+      </tr>
+      <tr>
+        <td bgcolor=" #FFA488"></td>
+        <td bgcolor=" #FFA488" align='center' valign="middle">
+    
+        <input type="button" name="衛保組" value="衛保組" onclick="showscr8();">
+          <div id="scr8" class="scr8"><div onclick="closescr8();" class="close">X</div> 這是衛保組</div></td>
+      </tr>
+      <tr bgcolor=" #FFA488">
+        <td></td>
+        <td align='center' valign="middle">
+    
+        <input type="button" name="通識活動" value="通識活動" onclick="showscr3();">
+          <div id="scr3" class="scr3"><div onclick="closescr3();" class="close">X</div> 這是通識活動</div></td>
+        <td></td>
+        <td align='center' valign="middle">
+    
+        <input type="button" name="圖書館" value="圖書館" onclick="showscr5();">
+          <div id="scr5" class="scr5"><div onclick="closescr5();" class="close">X</div> 這是圖書館</div></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <marquee direction="right" height="40" scrollamount="10" behavior="alternate" bgcolor=yellow><b><font color=bule face="微軟正黑體" size=6 align="botton">108學年註冊率高達99.97%！！！</font></b></marquee>    
+  </body>
+</html>
