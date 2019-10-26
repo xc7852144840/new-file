@@ -2,241 +2,554 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>中原大學學生證</title>
     <style type="text/css">
-    td{
-    height: 60px;
-    width: 100px;
+      body,input,button
+      {
+        font-family: 微軟正黑體;
+      }
+
+.ind1{
+  z-index:1;
+}
+.ind2{
+  z-index:2;
+}
+.ind3{
+  z-index:3;
+}
+
+.hover {position:relative;
+
+  height: 308px; width: 506px;}
+
+.hover img {
+  position:absolute;
+height: 308px;
+ width: 506px;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.hover img:nth-of-type(2):hover{
+  opacity:0; /滑鼠滑入時，透明度變0/
+}
+
+
+    td
+    {
+    	height: 60px;
+    	width: 100px;
     }
-    .p{
-    position:absolute;
-    top:3cm;
-    left:17cm;
+    .p
+    {
+    	position:absolute;
+    	top:3cm;
+    	left:17cm;
     }
-      
-    .scr1{
+    table td 
+    {
+  		border:2px solid  #888888;
+	}
+	.button 
+	{
+     background-color:  darkslateblue;
+	    border: none;
+	    color: white;
+	    padding: 20px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	}
+  .button:hover
+    {
+        outline: midnightblue solid;
+    }
+	.button2 
+	{
+	    display: inline-block;
+	    cursor: pointer;
+	    text-align: center;
+		text-decoration: none;
+	    height:10px
+	    outline: none;
+	    color: white;
+	    background-color:  #888888;
+	    border: none;
+	    border-radius: 15px;
+	    box-shadow: 0 9px #999;
+	    cursor: -webkit-grab; cursor: grab;
+	}
+    .button2:hover
+    {
+    	background-color: #444444;
+    }
+    .button2:active
+    {
+        background-color: #444444;
+        box-shadow: 0 5px #666666;
+        transform: translateY(4px);
+    }
+	.scr1{
             position: fixed;
-            top:50%;
-            left:45%;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr1>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
     .scr2{
-            position: fixed;
-            top:50%;
-            left:45%;
+             position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr2>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
       .scr3{
-            position: fixed;
-            top:50%;
-            left:45%;
+             position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr3>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
       .scr4{
-            position: fixed;
-            top:50%;
-            left:45%;
+             position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:5px double black;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
-            background-image: url(背景1.jpg
+            background-image: url(黑板.jpg
               ); 
-            background-size:contain;
+            background-size:cover;
+            z-index:3;
           }        
       .scr4>.close{
+        color: white;
         position:absolute;top: 1px;right: 2px;cursor:pointer;}
        
         .scr5{
              position: fixed;
-            top:50%;
-            left:45%;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
-            background-image: url(背景1.jpg
+            background-image: url(黑板.jpg
               ); 
-            background-size:contain;
+            background-size:cover;
+            z-index:3;
           }        
       .scr5>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
       .scr6{
-            position: fixed;
-            top:50%;
-            left:45%;
+             position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr6>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
       .scr7{
-            position: fixed;
-            top:50%;
-            left:45%;
+           position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr7>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
       .scr8{
-            position: fixed;
-            top:50%;
-            left:45%;
+         position: fixed;
+            top:29.5%;
+            left:50.1%;
             background-color: white;
-            padding: 30px;
-            border:10px ridge #0000FF;
+            width: 504px;
+            height:303px;
+        color: white;
+
+            border:10px groove #888888;
             display: none;
+            background-image: url(黑板.jpg
+              ); 
+            background-size:cover;
+            z-index:3;
           }        
       .scr8>.close{
         position:absolute;top: 1px;right: 2px;cursor:pointer;
       }    
     </style>
     <script>
-      function showscr1(){
-        scr1.style.display="block"
-      }
-      function closescr1(){
-        scr1.style.display="none"
-      }
-
-      function showscr2(){
-        scr2.style.display="block"
-      }
-      function closescr2(){
-        scr2.style.display="none"
-      }
-function showscr3(){
-        scr3.style.display="block"
-      }
-      function closescr3(){
-        scr3.style.display="none"
-      }
-      function showscr4(){
-        scr4.style.display="block"
-      }
-      function closescr4(){
-        scr4.style.display="none"
-      }
-      function showscr5(){
-        scr5.style.display="block"
-      }
-      function closescr5(){
-        scr5.style.display="none"
-      }
-      function showscr6(){
-        scr6.style.display="block"
-      }
-      function closescr6(){
-        scr6.style.display="none"
-      }function showscr7(){
-        scr7.style.display="block"
-      }
-      function closescr7(){
-        scr7.style.display="none"
-      }
-      function showscr8(){
-        scr8.style.display="block"
-      }
-      function closescr8(){
-        scr8.style.display="none"
-      }
-    </script>
-
-  </head>
-  <body background="bg.jpg" style=" background-repeat:no-repeat ;
-
-background-size:100% 100%; 
-
-background-attachment: fixed;" >
-    <a href="http://www1.cycu.edu.tw/"><img src="標誌.png" height="130" width="446" title="首頁"></a><br>
-
-    <marquee direction="down" height="500" width="35" scrollamount="10" bgcolor=yellow ><b><font color=bule face="微軟正黑體" size=6 >企業最愛私立大學第一名</font></b></marquee>
-    <table  background="圖片1.png" cellpadding="10" border='1' class="p">
-      <tr>
-        <td bgcolor="#FFA488"></td>
-        <td></td>
         
-        <td bgcolor="#FFA488" align='center' valign="middle">
-        <input type="button" name="免費軟體" value="免費軟體" onclick="showscr4();">
-          <div id="scr4" class="scr4"><div onclick="closescr4();" class="close">X</div> 這是免費軟體</div></td>  
-        <td></td>
-        <td bgcolor=" #FFA488" align='center' valign="middle">
-    
-        <input type="button" name="悠遊卡" value="悠遊卡" onclick="showscr6();">
-          <div id="scr6" class="scr6"><div onclick="closescr6();" class="close">X</div> 這是悠遊卡</div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td  bgcolor=" #FFA488" align='center' valign="middle">
-    
-        <input type="button" name="學生證" value="學生證" onclick="showscr1();">
-          <div id="scr1" class="scr1"><div onclick="closescr1();" class="close">X</div> 這是學生證</div></td>
-        <td rowspan="4" colspan="4"><img src="idcard.jpg" height="308" width="506"></td>
-        <td bgcolor=" #FFA488"></td>
-      </tr>
-      <tr>
-        <td bgcolor=" #FFA488"></td>
-        <td bgcolor=" #FFA488" align='center' valign="middle">
-    
-        <input type="button" name="討論室" value="討論室" onclick="showscr7();">
-          <div id="scr7" class="scr7"><div onclick="closescr7();" class="close">X</div> 這是討論室</div></td>
-      </tr>
-      <tr>
-        <td  bgcolor=" #FFA488" align='center' valign="middle">
-    
-        <input type="button" name="特約商店" value="特約商店" onclick="showscr2();">
-          <div id="scr2" class="scr2"><div onclick="closescr2();" class="close">X</div> 這是特約商店</div></td>
-        <td bgcolor=" #FFA488"></td>
-      </tr>
-      <tr>
-        <td bgcolor=" #FFA488"></td>
-        <td bgcolor=" #FFA488" align='center' valign="middle">
-    
-        <input type="button" name="衛保組" value="衛保組" onclick="showscr8();">
-          <div id="scr8" class="scr8"><div onclick="closescr8();" class="close">X</div> 這是衛保組</div></td>
-      </tr>
-      <tr bgcolor=" #FFA488">
-        <td></td>
+        function showscr1(){
+        scr1.style.display="block"
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr1(){
+        scr1.style.display="none"
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+
+        function showscr2(){
+        scr2.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr2(){
+        scr2.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr3(){
+        scr3.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr3(){
+        scr3.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr4(){
+        scr4.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr4(){
+        scr4.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr5(){
+        scr5.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr5(){
+        scr5.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr6(){
+        scr6.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr6(){
+        scr6.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr7(){
+        scr7.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        }
+        function closescr7(){
+        scr7.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        }
+        function showscr8(){
+        scr8.style.display="block"
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        }
+        function closescr8(){
+        scr8.style.display="none"
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        }
+    </script>
+  </head>
+  <body background="bg1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;" >
+    <a href="https://www1.cycu.edu.tw/"><img src="中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
+    <div  style="position:absolute; right:540px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button> 
+    </div>
+    <div  style="position:absolute; right:330px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px">關於我們</button> 
+    </div>
+    <div  style="position:absolute; right:120px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='回饋表單.html'">回饋表單</button> 
+    </div>
+
+    <marquee direction="down" height="500" width="35" scrollamount="10" bgcolor=yellow ><b><font color=bule size=6 >企業最愛私立大學第一名</font></b></marquee>
+    <table background="table.jpg" style="border:5px   #888888 dashed; " cellpadding="6" border='3' class="p">
+      <tr >
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
         <td align='center' valign="middle">
     
-        <input type="button" name="通識活動" value="通識活動" onclick="showscr3();">
-          <div id="scr3" class="scr3"><div onclick="closescr3();" class="close">X</div> 這是通識活動</div></td>
-        <td></td>
+        <input type="button" class="button" id="btn4" name="免費軟體" value="免費軟體" onclick="showscr4();">
+          <div id="scr4" class="scr4"><div onclick="closescr4();" class="close">X</div>
+          <font size="5px"><br><br>持學生證可以至教學717<br>免費借用全校授權之軟體喔～<br>記得要注意借用時段<br>不要撲空了！</font><br><br>
+          <a href="https://itouch.cycu.edu.tw/active_project/cycu2900h_04/cycu_02/lend/lend.htm" target="_blank"><font color="#ff9999" size="4px"><b>來這裡了解詳情</b></font></a></div></td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
         <td align='center' valign="middle">
     
-        <input type="button" name="圖書館" value="圖書館" onclick="showscr5();">
-          <div id="scr5" class="scr5"><div onclick="closescr5();" class="close">X</div> 這是圖書館</div></td>
-        <td></td>
-        <td></td>
+        <input type="button" class="button" id="btn6" name="悠遊卡" value="悠遊卡" onclick="showscr6();">
+          <div id="scr6" class="scr6"><div onclick="closescr6();" class="close">X</div>
+        <font size="5px"><br><br>學生證不只是學生證<br>！也是一張悠遊卡！<br>一舉數得好棒ㄟ<br>（不是每間大學的學生證都是悠遊卡ㄛ）</font><br><br>
+        <a href="https://www.easycard.com.tw/" target="_blank"><font color="#ff9999" size="4px"><b>看更多悠遊卡介紹</b></font></a></div></td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td align='center' valign="middle">
+    
+		<input type="button"  class="button" id="btn1" name="學生證" value="學生證" onclick="showscr1();">
+		<div id="scr1" class="scr1"><div onclick="closescr1();" class="close" >X</div >
+    <font size="5px"><br>這才不是普通的學生證咧<br>點點看其他按鈕<br>介紹更多學生證的用途給你<br>看完還不來讀中原大學<br>是傻了嗎?????<br></font><font size="3px"><br>而且我們校長很帥<br>滑鼠移到學生證圖片就看到囉</font></div>
+
+        <td rowspan="4" colspan="4">
+          
+
+ 
+
+<div class="hover">
+ 
+    <img src="光正.jpg" />
+  
+
+    <img src="idcard.jpg" />
+ 
+</div>
+        </td>
+
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+        <td align='center' valign="middle">
+    
+        <input type="button" class="button" id="btn7" name="樂學園" value="樂學園" onclick="showscr7();">
+          <div id="scr7" class="scr7"><div onclick="closescr7();" class="close">X</div>
+          <font size="5px"><br>樂學園提供多功能學習空間<br>設立於真知教學大樓二樓<br>帶著學生證可以到「活水來」<br>預約討論室喔！<br>環境超舒適的啦</font><br><br>
+          <a href="https://fm.cycu.edu.tw/main_j_08.html?type=A" target="_blank"><font color="#ff9999" size="4px"><b>樂學園詳細介紹</b></font></a></div></td>
+      </tr>
+      <tr>
+        <td align='center' valign="middle">
+    
+        <input type="button" class="button" id="btn2" name="特約商店" value="特約商店" onclick="showscr2();">
+          <div id="scr2" class="scr2"><div onclick="closescr2();" class="close">X</div>
+          <font size="5px"><br><br>出門一定要記得帶學生證ㄛ<br>在很多店家都能有優惠！<br>結帳的時候才想到忘記帶<br>絕對會後悔啦～</font><br><br>
+          <a href="https://sa.cycu.edu.tw/?page_id=1689" target="_blank"><font color="#ff9999" size="4px"><b>看看有哪些特約商店吧</b></font></a></div></td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+        <td align='center' valign="middle">
+    
+        <input type="button" class="button" id="btn8" name="衛保組" value="衛保組" onclick="showscr8();">
+          <div id="scr8" class="scr8"><div onclick="closescr8();" class="close">X</div>
+          <font size="5px"><br><br>台灣有健保已經很不錯了<br>在中原&nbsp;&nbsp;&nbsp;帶著學生證去衛保組看病<br>竟然不用錢？！<br>太爽了吧&nbsp;&nbsp;&nbsp;還不趕快多生病</font><br><br>
+            <a href="https://uip.cycu.edu.tw/UIPWeb/wSite/np?ctNode=16054&mp=2100" target="_blank"><font color="#ff9999" size="4px"><b>要特別注意看診時間與項目呀</b></font></a></div></td>
+      </tr>
+      <tr>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+        <td align='center' valign="middle">
+    
+        <input type="button" class="button" id="btn3" name="通識活動" value="通識活動" onclick="showscr3();">
+          <div id="scr3" class="scr3"><div onclick="closescr3();" class="close">X</div>
+          <font size="5px"><br><br>學校常會有各種類型的精彩表演<br>錯過真的很可惜啦<br>進出場記得要刷學生證<br>才會有通識認證喔！</font><br><br>
+            <a href="https://cge.cycu.edu.tw/" target="_blank"><font color="#ff9999" size="4px"><b>通識活動一覽無遺</b></font></a></div></td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
+        <td align='center' valign="middle">
+    
+        <input type="button" class="button" id="btn5" name="圖書館" value="圖書館" onclick="showscr5();">
+          <div id="scr5" class="scr5"><div onclick="closescr5();" class="close">X</div>
+          <font size="5px"><br><br>圖書館內可憑學生證借書<br>書多到你眼花撩亂啦<br>身為一位書生<br>還是要來一下的吧</font><br><br>
+            <a href="https://www.lib.cycu.edu.tw/" target="_blank"><font color="#ff9999" size="4px"><b>這是圖書館</b></font></a></div></td>
+        <td><div align='center'><img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"></div></td>
+        <td><div align='center'>
+       <img src="dog01.png" onmouseover="this.src=' dog02.png ';" onmouseout="this.src=' dog01.png '; " width="60" height="54"> </div>
+
+        </td>
       </tr>
     </table>
 
-    <marquee direction="right" height="40" scrollamount="10" behavior="alternate" bgcolor=yellow><b><font color=bule face="微軟正黑體" size=6 align="botton">108學年註冊率高達99.97%！！！</font></b></marquee>    
+    <marquee direction="right" height="40" scrollamount="10" behavior="alternate" bgcolor=yellow><b><font color=bule size=6 align="botton">108學年註冊率高達99.97%！！！</font></b></marquee>    
   </body>
 </html>

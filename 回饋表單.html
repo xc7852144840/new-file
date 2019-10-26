@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>回饋表單</title>
+		<style type="text/css">
+		fieldset.a
+		{
+    		padding:10px;
+    		width:340px;
+   			margin-bottom:10px;
+    		background:#EEE;
+    		border-radius: 8px;
+    		box-shadow:3px 3px 10px #666;
+   
+		}
+		fieldset.b
+		{
+    		padding:10px;
+    		width:420px;
+   			margin-bottom:10px;
+    		background:#EEE;
+    		border-radius: 8px;
+    		box-shadow:3px 3px 10px #666;
+
+		}
+		legend
+		{
+    		padding:5px 10px;
+    		background-color:#4F709F;
+    		color:#FFF;
+    		border-radius:5px;
+    		box-shadow:2px 2px 4px #666;
+    	}
+    	input.c
+  		{ 
+			background-color: #99CCFF;
+			border: 1.3px solid #6699FF;
+			height: 30px;
+			border-radius: 6px;
+			font-size:18px;
+		    font-weight:bold;
+		    font-family: 微軟正黑體;
+			position: relative;
+			left: 17.6cm;
+			top:1cm;
+			bottom: 6.3cm;
+			color: white;
+			width:100px;
+			height:35px;
+  		}
+  		.c:hover
+  		{
+  			color: black;
+  			background-color: white;
+
+  		}
+		.d
+		{
+			position:relative;
+			left: 0cm;
+    		bottom: 0cm;
+			font-family:微軟正黑體;
+			font-weight:bold;
+			font-size:40px;
+			text-align:center;	
+			
+		}
+		.button2 {
+          display: inline-block;
+          font-family:微軟正黑體;
+          cursor: pointer;
+       	  text-align: center; 
+          text-decoration: none;
+          height:10px
+
+    outline: none;
+    color: white;
+    background-color:  #888888;
+    border: none;
+    border-radius: 15px;
+         box-shadow: 0 9px #999;
+         cursor: -webkit-grab; cursor: grab;
+   }
+   .button2:hover {background-color: #444444}
+
+   .button2:active {
+       background-color: #444444;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+   }
+.flex-container {
+  display: flex;
+
+  justify-content:space-around ;
+
+}
+
+
+
+		</style>
+
+	</head>
+<body background="bg1.jpg" style=" background-repeat:no-repeat ;
+
+background-size:100% 100%; 
+
+background-attachment: fixed;" >
+    <a href="https://www1.cycu.edu.tw/"><img src="中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
+    <div  style="position:absolute; right:540px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button> 
+    </div>
+        <div  style="position:absolute; right:330px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px">關於我們</button> 
+    </div>
+        <div  style="position:absolute; right:120px; top: 20px; ">
+      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='回饋表單.html'">回饋表單</button> 
+    </div>
+
+		<div class="d"><b>來  點  回  饋  吧</b></div>
+		<hr color="moccasin" width="30%" size="6" class="d">
+		<div class="flex-container">
+		<span></span>
+		<span></span>
+		<fieldset class="a">
+		<legend align="center"><b><font face="微軟正黑體" size="5">個人資料</font></b></legend>
+		<font face="微軟正黑體">
+		<ol>
+			<br><li>
+					姓名：<input type="text" name="姓名" size="10" />
+			</li>
+			<br>
+			<li>
+					系級：<input type="text" name="系級" size="10" />
+			</li>
+			<br>
+			<li>
+					學號：<input type="text" name="學號" size="10" />
+			</li>
+			<br>
+			<li>
+					性別：
+					<input type="radio" name="性別" value="男" checked/ >男生
+					<input type="radio" name="性別" value="女" />女生
+			</li>
+			<br>
+			<li>
+					E-mail：<input type="text" name="電子信箱" size="25" />
+			</li>
+		</ol>
+		</font>
+		</fieldset>
+
+		<fieldset class="b">
+		<legend align="center" ><b><font face="微軟正黑體" size="5">說點什麼</font></b></legend>
+		<font face="微軟正黑體">
+		<ol>
+			<li>
+					想對我們說：<br><textarea name="想對我們說" cols="45" rows="6" wrap="hard"></textarea>
+			</li>
+			<br>
+			<li>
+					問題與建議：<br><textarea name="問題與建議" cols="45" rows="6" wrap="hard"></textarea>
+			</li>
+		</ol>
+		</font>
+		</fieldset>
+		<span></span>
+		<span></span>  
+	    </div>
+		<input type="submit" value="送出" class="c" />
+		<div  style="position:absolute; right:120px; top: 600px; ">
+      	<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button> 
+    	</div>
+	</body>
+</html>
