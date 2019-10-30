@@ -34,7 +34,7 @@
     	}
     	input.c
   		{ 
-			background-color: #99CCFF;
+			background-color: #4F709F;
 			border: 1.3px solid #6699FF;
 			height: 30px;
 			border-radius: 6px;
@@ -55,10 +55,9 @@
   			background-color: white;
 
   		}
-		.d
-		{
+		.d {
 			position:relative;
-			left: 0cm;
+			left: -1cm;
     		bottom: 0cm;
 			font-family:微軟正黑體;
 			font-weight:bold;
@@ -67,58 +66,66 @@
 			
 		}
 		.button2 {
-          display: inline-block;
-          font-family:微軟正黑體;
-          cursor: pointer;
-       	  text-align: center; 
-          text-decoration: none;
-          height:10px
-
-    outline: none;
-    color: white;
-    background-color:  #888888;
-    border: none;
-    border-radius: 15px;
-         box-shadow: 0 9px #999;
-         cursor: -webkit-grab; cursor: grab;
-   }
-   .button2:hover {background-color: #444444}
-
-   .button2:active {
-       background-color: #444444;
-       box-shadow: 0 5px #666;
-       transform: translateY(4px);
-   }
-.flex-container {
-  display: flex;
-
-  justify-content:space-around ;
-
-}
-
-
-
+        	display: inline-block;
+	        font-family:微軟正黑體;
+	        cursor: pointer;
+	       	text-align: center; 
+	        text-decoration: none;
+	        height:10px
+	    	outline: none;
+	    	color: white;
+	    	background-color:  #888888;
+	    	border: none;
+	    	border-radius: 15px;
+	        box-shadow: 0 9px #999;
+	        cursor: -webkit-grab; cursor: grab;
+   		}
+   		.button2:hover {
+   			background-color: #444444}
+   		.button2:active {
+	        background-color: #444444;
+	        box-shadow: 0 5px #666;
+	        transform: translateY(4px);
+   		}
+		.flex-container {
+	  		display: flex;
+	  		justify-content:space-around ;
+		}
+		.button3 {
+	        display: inline-block;
+	        font-family:微軟正黑體;
+	        cursor: pointer;
+	       	text-align: center; 
+	        text-decoration: none;
+	    	outline: none;
+	    	color: white;
+	    	background-color:  #444444;
+	    	border: none;
+	    	border-radius: 40%;
+	        cursor: -webkit-grab; cursor: grab;
+  		 }
+   		.button3:hover {
+   			background-color: #444444}
+   		.button3:active {
+	        background-color: #444444;
+	        box-shadow: 0 5px #666;
+	        transform: translateY(4px);
+   		}
 		</style>
-
 	</head>
-<body background="bg1.jpg" style=" background-repeat:no-repeat ;
-
-background-size:100% 100%; 
-
-background-attachment: fixed;" >
-    <a href="https://www1.cycu.edu.tw/"><img src="中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
-    <div  style="position:absolute; right:540px; top: 20px; ">
-      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button> 
-    </div>
+	<body background="照片/b.jpg" style=" background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;" >
+    	<a href="https://www1.cycu.edu.tw/" target="_blank"><img src="照片/中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
+    	<div  style="position:absolute; right:540px; top: 20px; ">
+      		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button> 
+    	</div>
         <div  style="position:absolute; right:330px; top: 20px; ">
-      <button class="button2" style="width:200px;height:50px;font-size:24px">關於我們</button> 
-    </div>
+      		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='關於我們.html'">關於我們</button> 
+    	</div>
         <div  style="position:absolute; right:120px; top: 20px; ">
-      <button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='回饋表單.html'">回饋表單</button> 
-    </div>
-
+    		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='回饋表單.html'">回饋表單</button> 
+    	</div>
 		<div class="d"><b>來  點  回  饋  吧</b></div>
-		<hr color="moccasin" width="30%" size="6" class="d">
+		<hr color="#EEFFBB" width="30%" size="6" class="d">
 		<div class="flex-container">
 		<span></span>
 		<span></span>
@@ -170,7 +177,7 @@ background-attachment: fixed;" >
 	    </div>
 		<input type="submit" value="送出" class="c" />
 		<div  style="position:absolute; right:120px; top: 600px; ">
-      	<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button> 
+      	<button class="button3" style="width:120px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button> 
     	</div>
 	</body>
 </html>

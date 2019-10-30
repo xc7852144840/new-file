@@ -6,149 +6,157 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/lib/w3.css">
 		<style>
-			.button2 {
-		display: inline-block;
-		font-family:微軟正黑體;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
-		height:10px
-		outline: none;
-		color: white;
-		background-color:  #888888;
-		border: none;
-		border-radius: 15px;
-		box-shadow: 0 9px #999;
-		cursor: -webkit-grab; cursor: grab;
+		.button2 {
+			display: inline-block;
+			font-family:微軟正黑體;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			height:10px
+			outline: none;
+			color: white;
+			background-color:  #888888;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+			cursor: -webkit-grab; cursor: grab;
 		}
-		.button2:hover {background-color: #444444}
+		.button2:hover {
+			background-color: #444444}
 		.button2:active {
-		background-color: #444444;
-		box-shadow: 0 5px #666;
-		transform: translateY(4px);
+			background-color: #444444;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
 		}
 		nav {
-		float: left;
-		width: 250px;
-		height: 300px;
-		padding: 8px;
-		
+			float: left;
+			width: 250px;
+			height: 300px;
+			padding: 8px;
 		}
 		nav ul {
-		list-style-type: none;
-		position:absolute;
-		top:250px;
-		}
-		div.a
-		{
-		float:left;
-		margin-right:5px;
-		margin-left:15px;
-		margin-top:70px;
-		}
-		.flex-container {
-		display: flex;
-		justify-content:space-around ;
-		}
-		p.b{
-		font-size: 20px;
-		padding: 10px;
-		font-family:微軟正黑體;
-		color:white;
-		font-weight: bold;
-		margin-top:150px;
-		margin-left:45px;
-		margin-right:65px;
-		background: #888888;
-		border-radius: 4px;
-		letter-spacing: 2px;
+			list-style-type: none;
+			position:absolute;
+			top:250px;
 		}
 		div.a {
-  outline-style: groove;
-  outline-color: #888888;
-  outline-width: 12px;
-}
-
-
+			float:left;
+			margin-right:5px;
+			margin-left:15px;
+			margin-top:70px;
+		}
+		.flex-container {
+			display: flex;
+			justify-content:space-around ;
+		}
+		p.b {
+			font-size: 20px;
+			padding: 10px;
+			font-family:微軟正黑體;
+			color:white;
+			font-weight: bold;
+			margin-top:150px;
+			margin-left:45px;
+			margin-right:65px;
+			background: #888888;
+			border-radius: 4px;
+			letter-spacing: 2px;
+		}
+		div.a {
+	 	    outline-style: groove;
+	 	    outline-color: #888888;
+	  	  	outline-width: 12px;
+		}
 		.mySlides {
-			display:none;}
-		ul { /* 取消ul預設的內縮及樣式 */
-        margin-left: 10px;
-        padding: 0;
-        list-style: none;
-    }
-
-    ul.drop-down-menu {
-      
-        display: inline-block;
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-size: 13px;
-    }
-
-    ul.drop-down-menu li {
-        position: relative;
-        white-space: nowrap;
-       
-    }
-
-    ul.drop-down-menu > li:last-child {
-        border-right: none;
-    }
-
-
-
-     ul.drop-down-menu a {
-        background-color: #888888;
-        color: white;
-        font-family:微軟正黑體;
-        border-radius: 4px;
-        font-size: 20px;
-        display: block;
-        padding: 0 30px;
-        text-decoration: none;
-        line-height: 40px;
-        text-align: center;
-
-    }
-    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
-        background-color: #444444;
-        color: black;
-    }
-    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
-        background-color: #444444;
-        color: black;
-    }
-    ul.drop-down-menu ul { /*隱藏次選單*/
-        display: none;
-    }
-
-    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
-        display: block;
-    }
-
-        ul.drop-down-menu ul li { /*第三層以後的選單出現位置與第二層不同*/
-        z-index: 999;
-        top: -250px;
-        left: 140px;
-    }
+			display:none;
+		}
+		ul { 
+        	margin-left: 10px;
+        	padding: 0;
+        	list-style: none;
+    	}
+    	ul.drop-down-menu {
+	        display: inline-block;
+	        font-family: 'Open Sans', Arial, sans-serif;
+	        font-size: 13px;
+    	}
+    	ul.drop-down-menu li {
+        	position: relative;
+        	left:-0.5cm;
+        	top:1cm;
+        	white-space: nowrap;  
+    	}
+   		ul.drop-down-menu > li:last-child {
+        	border-right: none;
+    	}
+     	ul.drop-down-menu a {
+	        background-color: #888888;
+	        color: white;
+	        font-family:微軟正黑體;
+	        border-radius: 4px;
+	        font-size: 20px;
+	        display: block;
+	        padding: 0 30px;
+	        text-decoration: none;
+	        line-height: 40px;
+	        text-align: center;
+    	}
+    	ul.drop-down-menu a:hover { 
+        	background-color: #444444;
+        	color: black;
+    	}
+    	ul.drop-down-menu li:hover > a { 
+       		background-color: #444444;
+        	color: black;
+    	}
+    	ul.drop-down-menu ul { 
+        	display: none;
+    	}
+    	ul.drop-down-menu li:hover > ul { /
+        	display: block;
+    	}
+        ul.drop-down-menu ul li { 
+	        z-index: 999;
+	        top: -250px;
+	        left: 140px;
+   		}
+    	.button3 {
+	        display: inline-block;
+	        font-family:微軟正黑體;
+	        cursor: pointer;
+	       	text-align: center; 
+	        text-decoration: none;
+	    	outline: none;
+	    	color: white;
+	    	background-color:  #444444;
+	    	border: none;
+	   		border-radius: 40%;
+	        cursor: -webkit-grab; cursor: grab;
+   		}
+   		.button3:hover {
+   			background-color: #444444
+   		}
+   		.button3:active {
+	        background-color: #444444;
+	        box-shadow: 0 5px #666;
+	        transform: translateY(4px);
+   		}
 		</style>
-		<body>
-		<body background="bg1.jpg" style=" background-repeat:no-repeat ;
-		background-size:100% 100%;
-		background-attachment: fixed;" >
-		<a href="https://www1.cycu.edu.tw/"><img src="中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
+	</head>
+	<body background="照片/b.jpg" style=" background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;" >
+		<a href="https://www1.cycu.edu.tw/" target="_blank"><img src="照片/中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
 		<div  style="position:absolute; right:540px; top: 20px; ">
 			<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button>
 		</div>
 		<div  style="position:absolute; right:330px; top: 20px; ">
-			<button class="button2" style="width:200px;height:50px;font-size:24px">關於我們</button>
+			<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='關於我們.html'">關於我們</button>
 		</div>
 		<div  style="position:absolute; right:120px; top: 20px; ">
 			<button class="button2" style="width:200px;height:50px;font-size:24px"value="回饋表單" onclick="location.href='回饋表單.html'">回饋表單</button>
 		</div>
 		<div class="flex-container"> 
 			<nav>
-	<ul class="drop-down-menu">
+		<ul class="drop-down-menu">
         <li><a href="影片介紹.html">影片介紹</a></li><br>
         <li><a href="#">幕後花絮</a>
             <ul>
@@ -158,12 +166,11 @@
                 </li>
              </ul>
         </li>         
-    </ul>
-	</nav>
-				
+    	</ul>
+		</nav>		
 		<div><p class="b">有天于凱開箱了中原大學學生證，中途卻被有心人士搞破壞!!!!<br>到底要怎麼奪回學生證呢?讓我們繼續看下去。</p></div>
 		<div  style="position:absolute; right:120px; top: 600px; ">
-      	<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button> 
+      	<button class="button3" style="width:120px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button> 
     	</div>
 		</body>
 	</html>

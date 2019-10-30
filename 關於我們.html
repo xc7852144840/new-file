@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>關於我們</title>
+		<style type="text/css">	
+		.button2 {
+		    display: inline-block;
+		    font-family:微軟正黑體;
+		    cursor: pointer;
+		    text-align: center;
+			text-decoration: none;
+		    height:10px
+		    outline: none;
+		    color: white;
+		    background-color:  #888888;
+		    border: none;
+		    border-radius: 15px;
+		    box-shadow: 0 9px #999;
+		    cursor: -webkit-grab; cursor: grab;
+		}
+	    .button2:hover {
+	    	background-color: #44444
+	    }
+	    .button2:active {
+	        background-color: #444444;
+	        box-shadow: 0 5px #666;
+	        transform: translateY(4px);
+	    }
+		#candybox2{ 
+			width: 100%; font-family:微軟正黑體;
+			background: gray; 
+			color: white;
+			font-size: 50px;
+			position: absolute; top: 50%; left: 0%;
+			-webkit-transition:all .5s ease-in-out;
+			-moz-transition:all .5s ease-in-out;
+			-o-transition:all .5s ease-in-out;
+			-ms-transition:all .5s ease-in-out;}
+		#candybox2:hover { color: #FFD382;
+			-webkit-transition:all .5s ease-in-out;
+			-moz-transition:all .5s ease-in-out;
+			-o-transition:all .5s ease-in-out;
+			-ms-transition:all .5s ease-in-out;}
+		.button3 {
+	        display: inline-block;
+	        font-family:微軟正黑體;
+	        cursor: pointer;
+	       	text-align: center; 
+	        text-decoration: none;
+	    	outline: none;
+	    	color: white;
+	    	background-color:  #444444;
+	    	border: none;
+	    	border-radius: 40%;
+	        cursor: -webkit-grab; cursor: grab;
+	   	}
+	   .button3:hover {
+	   		background-color: #444444
+	   	}
+	   .button3:active {
+	       background-color: #444444;
+	       box-shadow: 0 5px #666;
+	       transform: translateY(4px);
+	   	}		    
+		div{ 
+			font-size: 20px; text-align: center;
+		}
+		.scr1,.scr2,.scr3,.scr4{ 
+			font-family:微軟正黑體;
+			text-indent: 1cm;
+			
+			
+			position: fixed; top:20%; left:32%; z-index: 9998;height: 300px;width:400px; 
+			background-color:white; background-image: url(whi1.png);
+			background-size: cover; 
+			color: gray;
+			padding: 70px ; border:10px solid #888888;
+			display: none;
+		}
+		.scr1>.close{ 
+			color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;
+		}
+		.scr2>.close{ 
+			color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;
+		}
+	  	.scr3>.close{ 
+	  		color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;
+	  	}
+		.scr4>.close{ 
+			color: gray; position:absolute; top: 1px; right: 2px; cursor:pointer;
+		}
+	    a{ 
+	    	text-decoration: none;color: gray; 
+	    }
+	    p.a{
+	    	position:relative;  top: 10px;
+	    	letter-spacing :1.8px;
+	    }
+		footer{ 
+			font-size: 20px; color: white;
+			text-align: center; background-color: gray;
+			position: fixed; top: 80%; right: 3%;
+			margin: 10px 2px; border: none; 
+			cursor: pointer;
+		}
+		h1{
+	    	font-size:40px;
+	    	font-family:微軟正黑體;
+	    	color:#888888;
+	    	letter-spacing :4px;
+	    	font-weight:bold;
+	    	position: absolute; left: 32%;top:3%;
+		}
+		.disable-click-event { 
+    		pointer-events: none !important; 
+		} 
+
+		.enable-click-event { 
+   			 pointer-events: auto !important; 
+		} 
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="csshake.css">
+		<script type="text/javascript">
+			function showscr1(){scr1.style.display="block"}
+			function showscr2(){scr2.style.display="block"}
+			function showscr3(){scr3.style.display="block"}
+			function showscr4(){scr4.style.display="block"}
+
+			function closescr1(){scr1.style.display="none"}
+			function closescr2(){scr2.style.display="none"}
+			function closescr3(){scr3.style.display="none"}
+	        function closescr4(){scr4.style.display="none"}
+		</script>
+	</head>
+	<body background="照片/b.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;" >
+		<a href="https://www1.cycu.edu.tw/" target="_blank"><img src="照片/中原.png" height="104" width="357" title="前往中原大學首頁"></a><br>
+    	<div style="position:absolute; right:540px; top: 20px; ">
+      		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='影片介紹.html'">影片介紹</button> </div>
+    	<div style="position:absolute; right:330px; top: 20px; ">
+      		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='關於我們.html'">關於我們</button> </div> 
+   		<div style="position:absolute; right:120px; top: 20px; ">
+      		<button class="button2" style="width:200px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='回饋表單.html'">回饋表單</button> </div>
+		<div id="candybox2">Introduce</div>	
+		<div>
+		<img style="position: absolute; top: 5%; left: 25%; 
+					-moz-transform:rotate(15deg);
+					-webkit-transform:rotate(15deg);
+					-o-transform:rotate(15deg);
+					-ms-transform:rotate(15deg);
+					transform:rotate(15deg);" 
+			class="shake-slow" onclick="showscr1();"
+			src="照片/關於我們/one1.png" width="15%"
+			onmouseover="this.src='照片/關於我們/one2.png'" onmouseout="this.src='照片/關於我們/one1.png'" >
+		</div>	
+		<div id="scr1" class="scr1">
+			<div onclick="closescr1();" class="close">X</div>
+				<h1>王惟彤</h1>
+					<a href="https://www.instagram.com/wwt916/?hl=zh-tw" target="_blank"><img src="照片/關於我們/ig.png" height="63" width="63" style="position: absolute; top: 79%; right:23%;" title="惟彤的IG"></a>
+					<a href="https://www.facebook.com/profile.php?id=100003152880377" target="_blank"><img src="照片/關於我們/fb.png" height="52" width="60" style="position: absolute; top: 79.5%; right:12%;" title="惟彤的FB"></a>
+				<p class="a">第一次把一個網站從無到有，一開始天真地以為可以照預想的進行，但實際上很困難，在製作過程中，常常和組員們一起討論、修改，當中也有意見不同的時候，雖然常常遇到瓶頸，但是這都沒有造成我們的阻礙，反而是一起成長，學到了更多的知識，了解到平常使用的網頁，製作都是非常繁瑣的，最後完成了屬於我們的網頁，心中是滿滿的感動和高興。</p>
+		</div>
+		<img style="position: absolute; top: 15%; right: 8%;"
+			 class="shake-crazy"
+			 onclick="showscr2()"
+			 src="照片/關於我們/two1.png" width="15%"
+			 onmouseover="this.src='照片/關於我們/two2.png'" onmouseout="this.src='照片/關於我們/two1.png'" >
+		<div id="scr2" class="scr2">
+			<div onclick="closescr2();" class="close">X</div>
+			<h1>蔡于凱</h1>
+				<a href="https://www.instagram.com/_yukai1202/?hl=zh-tw" target="_blank"><img src="照片/關於我們/ig.png" height="63" width="63" style="position: absolute; top: 79%; right:23%;" title="于凱的IG"></a>
+				<a href="https://www.facebook.com/profile.php?id=100009242330180" target="_blank" ><img src="照片/關於我們/fb.png" height="52" width="60" style="position: absolute; top: 79.5%; right:12%;" title="于凱的FB"></a>
+			<p class="a">我從期中專案體會到做一個網頁的困難，當中需要的技術和知識有太多太多，但這也告訴我邊學邊做的重要性，不求甚解是進步最大的敵人。而我也在這次的作業中了解到團隊合作的重要性，我很謝謝組員們的認真負責，包容我的笨拙。團隊中，大家都認真付出及努力時，往往會進步更快，激發出更大的力量，還能加深彼此的關係也使我們的能力更上一層樓。</p>
+		</div>		
+		<img style="position: absolute; top: 33%; left: 13%;
+					-moz-transform:rotate(-30deg);
+					-webkit-transform:rotate(-30deg);
+					-o-transform:rotate(-30deg);
+					-ms-transform:rotate(-30deg);
+					transform:rotate(-30deg)"
+			class="shake-horizontal"
+			onclick="showscr3()"
+			src="照片/關於我們/three1.png" width="10%"
+			onmouseover="this.src='照片/關於我們/three2.png'" onmouseout="this.src='照片/關於我們/three1.png'" >
+		<div id="scr3" class="scr3">
+			<div onclick="closescr3();" class="close">X</div>
+			<h1>陳福明</h1>
+			<a href="https://www.instagram.com/fu_ming_sohappy/?hl=zh-tw" target="_blank"><img src="照片/關於我們/ig.png" height="63" width="63" style="position: absolute; top: 79%; right:23%;" title="福明的IG"></a>
+			<a href="https://www.facebook.com/cindy.chen.50115" target="_blank"><img src="照片/關於我們/fb.png" height="52" width="60" style="position: absolute; top: 79.5%; right:12%;" title="福明的FB"></a>
+			<p class="a">以前無名小站還存活的時候就有碰過一點點的網頁，不過當時就只會套用別人寫好的樣式然後開後台去小改一些東西。沒想到過了很多年之後，我可以寫出一個網頁，還和組員們合作做出一個有完整架構的網站，真心感動。我超級感謝我的團隊夥伴們，在我成為盲人的那段時間對我不離不棄，而且還很有效率的訂好主題、把很多東西都想好，真的是可靠到我都戀愛了>///<</p>
+		</div>
+		<img style="position: absolute; top: 35%; right: 27% ;
+					-moz-transform:rotate(25deg);
+					-webkit-transform:rotate(25deg);
+					-o-transform:rotate(25deg);
+					-ms-transform:rotate(25deg);
+					transform:rotate(25deg);"
+			 class="shake-opacity shake-horizontal"
+			 onclick="showscr4()"
+			 src="照片/關於我們/four1.png" width="16%"
+			 onmouseover="this.src='照片/關於我們/four2.png'" onmouseout="this.src='照片/關於我們/four1.png'" >
+		<div id="scr4" class="scr4">
+			<div onclick="closescr4();" class="close">X</div>
+			<h1>陳怡君</h1>
+				<a href="https://www.instagram.com/mf23_1g/?hl=zh-tw" target="_blank"><img src="照片/關於我們/ig.png" height="63" width="63" style="position: absolute; top: 79%; right:23%;" title="怡君的IG"></a>
+				<a href="https://www.facebook.com/yi.j.chen.372" target="_blank"><img src="照片/關於我們/fb.png" height="52" width="60" style="position: absolute; top: 79.5%; right:12%;" title="怡君的FB"></a>
+			<p class="a">平常在做作業的時候，都覺得挺上手的，以為期中專案也能輕輕鬆鬆，沒想到我們還有那麼多需要學習的地方，一開始還蠻挫折的，但崩潰之餘，做出來之後還是超有成就感！感謝我們整個團隊一起努力，負責任的組員們太棒了❤️在此也對所有寫網頁的人表示敬佩！那麼多東西要調整實在太複雜了，希望以後也能成為很厲害的網頁大師：）持續進步啦～</p>
+		</div>
+		<div style="position:absolute; right:120px; top: 600px; ">
+		<button class="button3" style="width:120px;height:50px;font-size:24px"value="連結名稱" onclick="location.href='index.html'">HOME</button></div>
+	</body>
+</html>
